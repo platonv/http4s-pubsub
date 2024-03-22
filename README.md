@@ -11,6 +11,6 @@ Publishing to a topic will broadcast the message to all subscribers.
 
 Subscribe to a topic. The server will send messages to the client via Server-Sent Events.
 
-`POST /publish/{topic}
+`POST /publish/{topic}`
 
 Publish a message to a topic. The message(request body) will be broadcasted to all subscribers.
