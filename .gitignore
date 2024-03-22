@@ -3,9 +3,9 @@
 
 *.target
 
-/.idea
-/.bsp
-/target
+.idea
+.bsp
+target
 .bloop
 .metals
 project/target
