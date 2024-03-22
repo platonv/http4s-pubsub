@@ -1,0 +1,21 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/platon/http4s-pubsub/src/main/scala/com/platonv/http4s/pubsub/Main.scala:30:76 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m      withLogger = Logger.httpRoutes[[35mIO[0m](logHeaders = [31mtrue[0m, logBody = [31mtrue[0m)(httpApp)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                            ^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m Found:    (httpApp :[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m   cats.data.Kleisli[cats.effect.IO, org.http4s.Request[cats.effect.IO],[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m     org.http4s.Response[cats.effect.IO]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m )[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m Required: org.http4s.HttpRoutes[cats.effect.IO][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/platon/http4s-pubsub/src/main/scala/com/platonv/http4s/pubsub/Main.scala:34:31 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m                  .withHttpApp(withLogger).build[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                               ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mFound:    (withLogger :[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  cats.data.Kleisli[[_] =>> cats.data.OptionT[cats.effect.IO, _],[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    org.http4s.Request[cats.effect.IO], org.http4s.Response[cats.effect.IO]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mRequired: org.http4s.HttpApp[cats.effect.IO][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
